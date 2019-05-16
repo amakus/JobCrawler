@@ -1,13 +1,10 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-"""Tests for `jobcrawler` package."""
+"""Tests for 'jobcrawler' package."""
 
 import pytest
-
 from click.testing import CliRunner
-
-from jobcrawler import jobcrawler
 from jobcrawler import cli
 
 
