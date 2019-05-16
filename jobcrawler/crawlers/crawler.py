@@ -1,7 +1,5 @@
 """ This is the main module of the JobCrawler package."""
 
-from jobcrawler.crawlers.airbus_crawler import AirbusCrawler
-
 from typing import List, Optional
 from enum import Enum
 import logging
@@ -27,6 +25,15 @@ class Crawler:
 
         if dom is Domain.AIRBUS:
             return AirbusCrawler(ignore_kw, include_kw)
+
+
+class AirbusCrawler(Crawler):
+    """Crawler used for scraping Airbus.com job postings."""
+
+    _ = "www.airbus.com"
+
+    def __init__(self, ignore_kw, include_kw):
+        super(AirbusCrawler, self).__init__(ignore_kw, include_kw)
 
 
 class Domain(Enum):
