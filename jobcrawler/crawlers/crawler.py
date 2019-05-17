@@ -1,40 +1,31 @@
-""" This is the main module of the JobCrawler package."""
-
 from typing import List, Optional
 from enum import Enum
-import logging
+from dataclasses import dataclass
 
-log = logging.getLogger('MainModule')
+
+class CrawlerFactory:
+
+    @classmethod
+    def get_crawler(cls, domain):
+        pass
 
 
 class Crawler:
     """Abstract class for specific crawlers."""
 
-    def __init__(self, ignore_kw=None, include_kw=None):
-        # type: (Optional[List], Optional[List]) -> None
-        self._ignore_kw = ignore_kw
-        self._include_kw = include_kw
-
-    @classmethod
-    def from_domain(cls, domain, ignore_kw=None, include_kw=None):
-        # type: (str, Optional[List], Optional[List]) -> Optional[Crawler]
-        try:
-            dom = Domain(domain.lower())
-        except ValueError:
-            return
-
-        if dom is Domain.AIRBUS:
-            return AirbusCrawler(ignore_kw, include_kw)
+    def __init__(self, settings=None):
+        # type: (Optional[DomainSettings]) -> None
+        self.settings = settings
 
 
-class AirbusCrawler(Crawler):
-    """Crawler used for scraping Airbus.com job postings."""
-
-    _ = "www.airbus.com"
-
-    def __init__(self, ignore_kw, include_kw):
-        super(AirbusCrawler, self).__init__(ignore_kw, include_kw)
+@dataclass
+class DomainSettings:
+    """Data class to store the settings for the domain request sent by the crawler, eg. locations."""
+    locations: List[str]
+    include: List[str]
+    exclude: List[str]
 
 
 class Domain(Enum):
+    """Enum class for crawler class factory."""
     AIRBUS = 'airbus'
