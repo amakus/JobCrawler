@@ -4,16 +4,16 @@ from collections import namedtuple
 
 class JobItem:
 
-    def __init__(self, title, url, description=None):
+    def __init__(self, title, url, details=None):
         self.title = title
         self.url = url
-        self.description = description
+        self.details = details or JobDetails()
 
     def to_html(self, verbose=True):
         """Returns html table with job listing information. If verbose, full job description is included."""
 
         table_rows = self._html_table_row('title', self.title)
-        for item in iter(self.description) if verbose else iter([]):
+        for item in iter(self.details) if verbose else iter([]):
             if item.content:
                 table_rows += self._html_table_row(*item)
         else:
@@ -33,10 +33,13 @@ class JobItem:
 
         return f"<tr>{first_col + cols}</tr>"
 
+
 @dataclass
-class JobDescription:
-    """Contains """
-    _elems = ['category', 'department', 'overview', 'duties', 'skills', 'location']  # for ordered iteration
+class JobDetails:
+    """Contains details to a job posting."""
+    _detail_item = namedtuple('DetailItem', ['name', 'content'])
+    _elements = ['category', 'department', 'overview', 'duties', 'skills', 'location']  # for ordered iteration
+
     category: str = ''
     department: str = ''
     overview: str = ''
@@ -45,7 +48,11 @@ class JobDescription:
     location: str = ''
 
     def __iter__(self):
-        for elem in self._elems:
-            yield description_item(elem, vars(self)[elem])
+        for elem in self._elements:
+            yield self._detail_item(elem, vars(self)[elem])
 
-description_item = namedtuple('DescriptionItem', ['name', 'content'])
+    def has_entries(self):
+        return any([entry.content for entry in self])
+
+
+

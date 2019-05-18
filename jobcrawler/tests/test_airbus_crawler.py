@@ -1,6 +1,6 @@
 import pytest
 import responses
-from jobcrawler.crawlers.airbus_crawler import AirbusCrawler
+from jobcrawler.crawlers.airbuscrawler import AirbusCrawler
 from jobcrawler.crawlers.crawler import Crawler
 from jobcrawler.jobposting.jobitem import JobItem
 

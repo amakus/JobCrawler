@@ -1,5 +1,5 @@
 from jobcrawler.crawlers.crawler import CrawlerFactory
-from jobcrawler.crawlers.airbus_crawler import AirbusCrawler
+from jobcrawler.crawlers.airbuscrawler import AirbusCrawler
 import pytest
 
 
