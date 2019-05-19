@@ -1,3 +1,5 @@
+import time
+from datetime import datetime
 from jobcrawler.jobposting.jobitem import JobItem
 from jobcrawler.jobposting.jobitem import JobDetails
 
@@ -18,8 +20,13 @@ def test_job_item_properties():
     assert isinstance(item.details, JobDetails)
 
 
-def test_job_hash():
-    pass
+def test_job_date():
+    before = datetime.now()
+    time.sleep(1)
+    item = JobItem('job', 'url')
+    time.sleep(1)
+    after = datetime.now()
+    assert before < item.date < after
 
 
 def test_job_details_instantiation():
@@ -42,12 +49,9 @@ def test_job_details_properties():
     assert descr.skills == skills
     assert descr.location == location
 
-
 def test_iter_job_details():
     details = JobDetails(category='cat', skills='skillz', location='loc')
     assert [d.value for d in details] == ['cat', '', '', '', 'skillz', 'loc']
-
-
 def test_job_details_has_entries():
     details = JobDetails()
     assert details.has_entries() is False
@@ -78,3 +82,8 @@ def test_to_html_non_verbose():
 
     assert item.to_html(verbose=True) == expected_verbose
     assert item.to_html(verbose=False) == expected_non_verbose
+
+
+
+def test_job_hash():
+    pass

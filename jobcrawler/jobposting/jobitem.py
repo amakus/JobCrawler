@@ -1,13 +1,18 @@
-from dataclasses import dataclass
 from collections import namedtuple
+from datetime import datetime
 
 
 class JobItem:
 
     def __init__(self, title, url, details=None):
+        self._date = datetime.now()
         self.title = title
         self.url = url
         self.details = details or JobDetails()
+
+    @property
+    def date(self):
+        return self._date
 
     def to_html(self, verbose=True):
         """Returns html table with job listing information. If verbose, full job description is included."""

@@ -11,28 +11,18 @@ def test_instantiate():
     assert isinstance(crawler, Crawler)
 
 
-def test_call_urls():
-    crawler = AirbusCrawler()
+def test_get_url():
     pass
 
 
-@pytest.mark.skip('live request')
-def test_site_response():
-    pass
-
-
-def test_scrape_jobs():
-    crawler = AirbusCrawler()
-    raw_data = crawler.scrape_data()
-
-
-def test_parse_data(airbus_dummy_data):
-    crawler = AirbusCrawler()
-    data = airbus_dummy_data
-    jobs = crawler.parse_data(data)
-
-
-def test_get_jobs():
+def test_get_jobs(details=False):
     crawler = AirbusCrawler()
     jobs = crawler.get_jobs()
     assert all([isinstance(job, JobItem) for job in jobs])
+
+
+def test_get_job_details():
+    crawler = AirbusCrawler()
+    job_items = crawler.get_jobs()
+    crawler.apply_job_details(job_items)
+

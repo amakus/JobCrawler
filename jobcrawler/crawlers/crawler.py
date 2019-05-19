@@ -13,14 +13,14 @@ class CrawlerFactory:
 class Crawler:
     """Abstract class for specific crawlers."""
 
-    def __init__(self, settings=None):
-        # type: (Optional[DomainSettings]) -> None
-        self.settings = settings
+    def __init__(self, filter=None):
+        # type: (Optional[SearchFilter]) -> None
+        self.settings = filter
 
 
 @dataclass
-class DomainSettings:
-    """Data class to store the settings for the domain request sent by the crawler, eg. locations."""
+class SearchFilter:
+    """Data class to store the search filterss for the domain request sent by the crawler, eg. locations."""
     locations: List[str]
     include: List[str]
     exclude: List[str]
