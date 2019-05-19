@@ -37,10 +37,15 @@ def test_job_details_properties():
 
     assert descr.category == category
     assert descr.department == department
-    assert descr.overview == overview
+    assert descr.summary == overview
     assert descr.duties == duties
     assert descr.skills == skills
     assert descr.location == location
+
+
+def test_iter_job_details():
+    details = JobDetails(category='cat', skills='skillz', location='loc')
+    assert [d.value for d in details] == ['cat', '', '', '', 'skillz', 'loc']
 
 
 def test_job_details_has_entries():

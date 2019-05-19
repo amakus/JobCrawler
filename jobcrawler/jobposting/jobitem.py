@@ -34,25 +34,25 @@ class JobItem:
         return f"<tr>{first_col + cols}</tr>"
 
 
-@dataclass
 class JobDetails:
     """Contains details to a job posting."""
-    _detail_item = namedtuple('DetailItem', ['name', 'content'])
-    _elements = ['category', 'department', 'overview', 'duties', 'skills', 'location']  # for ordered iteration
+    _detail_item = namedtuple('DetailItem', ['name', 'value'])
+    _elements = ['category', 'department', 'summary', 'duties', 'skills', 'location']  # for ordered iteration
 
-    category: str = ''
-    department: str = ''
-    overview: str = ''
-    duties: str = ''
-    skills: str = ''
-    location: str = ''
+    def __init__(self, category=None, department=None, summary=None, duties=None, skills=None, location=None):
+        self.category = category or ''
+        self.department = department or ''
+        self.summary = summary or ''
+        self.duties = duties or ''
+        self.skills = skills or ''
+        self.location = location or ''
 
     def __iter__(self):
         for elem in self._elements:
             yield self._detail_item(elem, vars(self)[elem])
 
     def has_entries(self):
-        return any([entry.content for entry in self])
+        return any([entry.value for entry in self])
 
 
 

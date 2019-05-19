@@ -9,3 +9,4 @@ class AirbusCrawler(Crawler):
     def __init__(self, settings=None):
         super(AirbusCrawler, self).__init__(settings)
 
+

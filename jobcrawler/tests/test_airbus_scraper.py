@@ -25,6 +25,12 @@ def test_scrape_details(mock_response_job_post_airbus):
 
     details = AirbusScraper.scrape_job_details(resp)  # type: JobDetails
 
-    assert details.category == 'Vehicle Mission & Control'
+    assert details.category == 'Airbus Defence and Space'
+    assert details.department == 'Vehicle Mission & Control'
+    assert details.summary[:50] == 'A vacancy for a Systems Engineer (d/f/m)- Ground M'
+    assert details.duties[:50] == 'If you are looking for a challenging task in a dev'
+    assert details.skills[:50] == 'We are looking for candidates with the following s'
     assert details.location == 'Manching, Germany'
+
+
 

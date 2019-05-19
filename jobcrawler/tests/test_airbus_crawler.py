@@ -15,6 +15,7 @@ def test_call_urls():
     crawler = AirbusCrawler()
     pass
 
+
 @pytest.mark.skip('live request')
 def test_site_response():
     pass
