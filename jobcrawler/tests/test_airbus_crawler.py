@@ -1,5 +1,4 @@
 import pytest
-import responses
 from jobcrawler.crawlers.airbuscrawler import AirbusCrawler
 from jobcrawler.crawlers.crawler import Crawler
 from jobcrawler.jobposting.jobitem import JobItem
@@ -13,6 +12,9 @@ def test_instantiate():
 
 def test_get_url():
     pass
+
+
+
 
 
 def test_get_jobs(details=False):

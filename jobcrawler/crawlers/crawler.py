@@ -15,13 +15,12 @@ class Crawler:
 
     def __init__(self, filter=None):
         # type: (Optional[SearchFilter]) -> None
-        self.settings = filter
+        self.filter = filter
 
 
 @dataclass
 class SearchFilter:
-    """Data class to store the search filterss for the domain request sent by the crawler, eg. locations."""
-    locations: List[str]
+    """Data class to store the search filters for the domain request sent by the crawler, eg. locations."""
     include: List[str]
     exclude: List[str]
 
