@@ -1,3 +1,5 @@
+import pytest
+import requests
 from jobcrawler.jobposting.jobitem import JobItem, JobDetails
 from jobcrawler.scrapers.airbusscraper import AirbusScraper
 
@@ -33,4 +35,15 @@ def test_scrape_details(mock_response_job_post_airbus):
     assert details.location == 'Manching, Germany'
 
 
+# @pytest.mark.skip('live request')
+def test_scrape_airbus():
+    url = ("https://www.airbus.com/careers/search-and-apply/search-for-vacancies.html?resultbypage=10000"
+           "&filters="
+           #"filter_2_1054"
+           # "%2Cfilter_2_1054_2"
+           # "%2Cfilter_2_1054_23"
+           )
+    response = requests.get(url)
+    jobs = AirbusScraper.scrape_jobs(response)
 
+    assert len(jobs) == 99

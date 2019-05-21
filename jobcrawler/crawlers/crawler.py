@@ -1,6 +1,6 @@
 from typing import List, Optional
 from enum import Enum
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 
 
 class CrawlerFactory:
@@ -13,16 +13,16 @@ class CrawlerFactory:
 class Crawler:
     """Abstract class for specific crawlers."""
 
-    def __init__(self, filter=None):
+    def __init__(self, search_filter=None):
         # type: (Optional[SearchFilter]) -> None
-        self.filter = filter
+        self.filter = search_filter
 
 
 @dataclass
 class SearchFilter:
-    """Data class to store the search filters for the domain request sent by the crawler, eg. locations."""
-    include: List[str]
-    exclude: List[str]
+    """Class for storing search filters for the domain request sent by the crawler, eg. locations."""
+    include: List[str] = field(default_factory=list)
+    exclude: List[str] = field(default_factory=list)
 
 
 class Domain(Enum):
