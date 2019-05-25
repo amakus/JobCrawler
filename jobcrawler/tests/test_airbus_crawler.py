@@ -1,7 +1,7 @@
 import pytest
-from jobcrawler.crawlers.airbuscrawler import AirbusCrawler, AirbusFilter
-from jobcrawler.crawlers.crawler import Crawler
-from jobcrawler.jobposting.jobitem import JobItem
+from jobcrawler.crawlers.airbuscrawler import AirbusCrawler
+from jobcrawler.crawlers.crawler import Crawler, SearchFilter
+from jobcrawler.jobposting.jobitem import JobItem, JobDetails
 
 
 def test_instantiate():
@@ -11,25 +11,63 @@ def test_instantiate():
 
 
 def test_get_url():
-    filtr = AirbusFilter(location=['hamburg', 'bremen'])
+    filtr = SearchFilter(keywords=['Engineering', 'Hamburg', 'Bremen'])
     crawler = AirbusCrawler(filtr)
 
     url = crawler._get_url()
-    assert url == ("https://www.airbus.com/careers/search-and-apply/search-for-vacancies.html?filters",
-                   "filter_2_1054_2&filter_2_1054_23",
-                   "&page=1&resultbypage=10000")
+    assert url == ("https://www.airbus.com/"
+                   "careers/search-and-apply/search-for-vacancies.html?"
+                   "&page=1&resultbypage=10000"   # all results on one page
+                   "&filters="
+                   "%2Cfilter_3_17"
+                   "%2Cfilter_2_1054_2"
+                   "%2Cfilter_2_1054_23"
+                   )
 
 
-def test_get_jobs(details=False):
-    crawler = AirbusCrawler()
-    jobs = crawler.get_jobs()
+def test_get_url_non_existent_keyword():
+    filtr = SearchFilter(keywords=['Meow', 'Hamburg', 'Bremen'])
+    crawler = AirbusCrawler(filtr)
+
+    url = crawler._get_url()
+    assert url == ("https://www.airbus.com/"
+                   "careers/search-and-apply/search-for-vacancies.html?"
+                   "&page=1&resultbypage=10000"  # all results on one page
+                   "&filters="
+                   "%2Cfilter_2_1054_2"
+                   "%2Cfilter_2_1054_23"
+                   )
+
+
+@pytest.mark.skip('live request')
+def test_get_jobs():
+    filtr = SearchFilter(keywords=['Hamburg', 'Engineering'])
+    crawler = AirbusCrawler(filtr)
+    jobs = crawler.get_job_listings()
+
+    assert len(jobs) > 0
     assert all([isinstance(job, JobItem) for job in jobs])
 
 
+@pytest.mark.skip('live request')
+def test_get_jobs_zero_results():
+    filtr = SearchFilter(keywords=['Hamburg', 'Supply Management'])
+    crawler = AirbusCrawler(filtr)
+    jobs = crawler.get_job_listings()
+
+    assert len(jobs) == 0
+
+
+@pytest.mark.skip('live request')
 def test_get_job_details():
-    crawler = AirbusCrawler()
-    job_items = crawler.get_jobs()
-    crawler.apply_job_details(job_items)
+    filtr = SearchFilter(keywords=['Hamburg', 'Engineering'])
+    crawler = AirbusCrawler(filtr)
+    jobs = crawler.get_job_listings()
+    crawler.apply_job_details(jobs)
+
+    for job in jobs:
+        assert isinstance(job.details, JobDetails)
+        assert any([d for d in job.details])
 
 
 def test_airbus_filter():

@@ -45,6 +45,7 @@ class JobDetails:
     _elements = ['category', 'department', 'summary', 'duties', 'skills', 'location']  # for ordered iteration
 
     def __init__(self, category=None, department=None, summary=None, duties=None, skills=None, location=None):
+        # if no detail provided, empty string
         self.category = category or ''
         self.department = department or ''
         self.summary = summary or ''
