@@ -1,7 +1,6 @@
-import requests
 from bs4 import BeautifulSoup
-from jobcrawler.scrapers.scraper import Scraper
-from jobcrawler.jobposting.jobitem import JobItem, JobDetails
+from jobcrawler.core.scrapers.scraper import Scraper
+from jobcrawler.core.jobitem import JobItem, JobDetails
 
 
 class AirbusScraper(Scraper):

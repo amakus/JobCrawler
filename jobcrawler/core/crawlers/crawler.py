@@ -1,6 +1,5 @@
-from typing import List, Optional
-from enum import Enum
-from dataclasses import dataclass, field
+from typing import Optional
+from jobcrawler.core.filter import SearchFilter
 
 
 class CrawlerFactory:
@@ -30,17 +29,3 @@ class Crawler:
     def _apply_exclude_filter(self, job_items):
         """Returns jobs that do not include any of the keywords in job title or details."""
         pass
-
-
-@dataclass
-class SearchFilter:
-    """Class for storing search filters for the domain request sent by the crawler, eg. locations."""
-    keywords: List[str] = field(default_factory=list)
-    include: List[str] = field(default_factory=list)
-    exclude: List[str] = field(default_factory=list)
-
-
-class Domain(Enum):
-    """Enum class for crawler class factory."""
-    AIRBUS = 'airbus'
-    # add more domains here for crawler factory

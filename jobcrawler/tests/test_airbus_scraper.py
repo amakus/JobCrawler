@@ -1,8 +1,7 @@
 import pytest
 import requests
-from jobcrawler.jobposting.jobitem import JobItem, JobDetails
-from jobcrawler.crawlers.crawler import SearchFilter
-from jobcrawler.scrapers.airbusscraper import AirbusScraper
+from jobcrawler.core.jobitem import JobItem, JobDetails
+from jobcrawler.core.scrapers.airbusscraper import AirbusScraper
 
 pytest_plugins = ['jobcrawler/tests/data/fixtures/response']
 

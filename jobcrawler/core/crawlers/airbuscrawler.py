@@ -2,9 +2,10 @@ import logging
 import requests
 import time
 from typing import Optional, List
-from jobcrawler.jobposting.jobitem import JobItem, JobDetails
-from jobcrawler.crawlers.crawler import Crawler, SearchFilter
-from jobcrawler.scrapers.airbusscraper import AirbusScraper
+from jobcrawler.core.jobitem import JobItem, JobDetails
+from jobcrawler.core.crawlers.crawler import Crawler
+from jobcrawler.core.filter import SearchFilter
+from jobcrawler.core.scrapers.airbusscraper import AirbusScraper
 
 log = logging.getLogger('AirbusCrawler')
 
@@ -39,11 +40,9 @@ class AirbusCrawler(Crawler):
                 response = self._fetch_url_response(job_item.url)
             except ValueError:
                 log.warning(f'Could not retrieve job details for :{job_item.title}')
-                details = JobDetails()
+                job_item.details = JobDetails()
             else:
-                details = self.scraper.scrape_job_details(response)
-
-            job_item.details = details
+                job_item.details = self.scraper.scrape_job_details(response)
 
         return job_items
 

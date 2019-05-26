@@ -1,7 +1,8 @@
 import pytest
-from jobcrawler.crawlers.airbuscrawler import AirbusCrawler
-from jobcrawler.crawlers.crawler import Crawler, SearchFilter
-from jobcrawler.jobposting.jobitem import JobItem, JobDetails
+from jobcrawler.core.crawlers.airbuscrawler import AirbusCrawler
+from jobcrawler.core.crawlers.crawler import Crawler
+from jobcrawler.core.filter import SearchFilter
+from jobcrawler.core.jobitem import JobItem, JobDetails
 
 
 def test_instantiate():
@@ -68,8 +69,3 @@ def test_get_job_details():
     for job in jobs:
         assert isinstance(job.details, JobDetails)
         assert any([d for d in job.details])
-
-
-def test_airbus_filter():
-    pass
-

@@ -19,7 +19,7 @@ class JobItem:
 
         table_rows = self._html_table_row('title', self.title)
         for item in iter(self.details) if verbose else iter([]):
-            if item.content:
+            if item.value:
                 table_rows += self._html_table_row(*item)
         else:
             table_rows += self._html_table_row('url', self.url)

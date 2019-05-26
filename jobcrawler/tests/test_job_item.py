@@ -1,7 +1,7 @@
 import time
 from datetime import datetime
-from jobcrawler.jobposting.jobitem import JobItem
-from jobcrawler.jobposting.jobitem import JobDetails
+from jobcrawler.core.jobitem import JobItem
+from jobcrawler.core.jobitem import JobDetails
 
 
 def test_job_item_instantiation():

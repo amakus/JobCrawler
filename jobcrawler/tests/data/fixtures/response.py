@@ -1,6 +1,7 @@
 import pytest
 from jobcrawler.tests.data.fixtures import site_html_strings_airbus
 
+
 class MockResponse:
 
     def __init__(self, ok=None, content=None, text=None, status_code=None, url=None):
