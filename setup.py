@@ -15,7 +15,7 @@ requirements = ['Click>=6.0', 'requests']
 
 setup_requirements = ['pytest-runner', ]
 
-test_requirements = ['pytest', 'responses>=0.10.5']
+test_requirements = ['pytest', 'responses>=0.10.5', 'keyring>=18.0.0']
 
 setup(
     author="Andreas Makus",

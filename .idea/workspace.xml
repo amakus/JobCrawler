@@ -2,30 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="58f40b6f-ef09-430a-a1e5-33900578d0cf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/jobcrawler/core/filter.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jobcrawler/core/mailer.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jobcrawler/core/scrapers/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jobcrawler/tests/data/fixtures/job_items.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jobcrawler/tests/test_mailer.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jobcrawler/util/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jobcrawler/util/lorem_ipsum.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jobcrawler/crawlers/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/jobcrawler/core/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jobcrawler/crawlers/airbuscrawler.py" beforeDir="false" afterPath="$PROJECT_DIR$/jobcrawler/core/crawlers/airbuscrawler.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jobcrawler/crawlers/crawler.py" beforeDir="false" afterPath="$PROJECT_DIR$/jobcrawler/core/crawlers/crawler.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jobcrawler/jobposting/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/jobcrawler/core/crawlers/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jobcrawler/jobposting/filtermaps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jobcrawler/jobposting/jobitem.py" beforeDir="false" afterPath="$PROJECT_DIR$/jobcrawler/core/jobitem.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jobcrawler/scrapers/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/jobcrawler/core/domain.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jobcrawler/scrapers/airbusscraper.py" beforeDir="false" afterPath="$PROJECT_DIR$/jobcrawler/core/scrapers/airbusscraper.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jobcrawler/scrapers/scraper.py" beforeDir="false" afterPath="$PROJECT_DIR$/jobcrawler/core/scrapers/scraper.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jobcrawler/tests/data/fixtures/response.py" beforeDir="false" afterPath="$PROJECT_DIR$/jobcrawler/tests/data/fixtures/response.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jobcrawler/tests/test_airbus_crawler.py" beforeDir="false" afterPath="$PROJECT_DIR$/jobcrawler/tests/test_airbus_crawler.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jobcrawler/tests/test_airbus_scraper.py" beforeDir="false" afterPath="$PROJECT_DIR$/jobcrawler/tests/test_airbus_scraper.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jobcrawler/tests/test_crawler_factory.py" beforeDir="false" afterPath="$PROJECT_DIR$/jobcrawler/tests/test_crawler_factory.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jobcrawler/tests/test_job_item.py" beforeDir="false" afterPath="$PROJECT_DIR$/jobcrawler/tests/test_job_item.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jobcrawler/tests/test_jobcrawler.py" beforeDir="false" afterPath="$PROJECT_DIR$/jobcrawler/tests/test_jobcrawler.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jobcrawler/core/mailer.py" beforeDir="false" afterPath="$PROJECT_DIR$/jobcrawler/core/mailer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jobcrawler/tests/test_mailer.py" beforeDir="false" afterPath="$PROJECT_DIR$/jobcrawler/tests/test_mailer.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/requirements_dev.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements_dev.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -41,7 +22,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jobcrawler/core/jobitem.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
+            <state relative-caret-position="306">
               <caret line="19" column="2" selection-start-line="19" selection-start-column="2" selection-end-line="19" selection-end-column="2" />
               <folding>
                 <element signature="e#0#34#0" expanded="true" />
@@ -50,20 +31,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/jobcrawler/core/mailer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+            <state relative-caret-position="68">
+              <caret line="19" column="32" lean-forward="true" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
+              <folding>
+                <element signature="e#0#14#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jobcrawler/tests/test_mailer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="18" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
+            <state relative-caret-position="85">
+              <caret line="17" column="7" lean-forward="true" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -104,7 +88,6 @@
         <option value="$PROJECT_DIR$/tests/test_base_crawler.py" />
         <option value="$PROJECT_DIR$/jobcrawler/jobposting.py" />
         <option value="$PROJECT_DIR$/jobcrawler/jobposting/jobdescription.py" />
-        <option value="$PROJECT_DIR$/setup.py" />
         <option value="$PROJECT_DIR$/tests/test_crawler_factory.py" />
         <option value="$PROJECT_DIR$/jobcrawler/crawlers/airbus_crawler.py" />
         <option value="$PROJECT_DIR$/tests/test_airbus_crawler.py" />
@@ -134,9 +117,10 @@
         <option value="$PROJECT_DIR$/jobcrawler/tests/data/fixtures/response.py" />
         <option value="$PROJECT_DIR$/jobcrawler/util/lorem_ipsum.py" />
         <option value="$PROJECT_DIR$/jobcrawler/tests/data/fixtures/job_items.py" />
-        <option value="$PROJECT_DIR$/jobcrawler/core/mailer.py" />
         <option value="$PROJECT_DIR$/requirements_dev.txt" />
+        <option value="$PROJECT_DIR$/setup.py" />
         <option value="$PROJECT_DIR$/jobcrawler/tests/test_mailer.py" />
+        <option value="$PROJECT_DIR$/jobcrawler/core/mailer.py" />
       </list>
     </option>
   </component>
@@ -153,6 +137,63 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="JobCrawler" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JobCrawler" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JobCrawler" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JobCrawler" type="462c0819:PsiDirectoryNode" />
+              <item name="jobcrawler" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JobCrawler" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JobCrawler" type="462c0819:PsiDirectoryNode" />
+              <item name="jobcrawler" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JobCrawler" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JobCrawler" type="462c0819:PsiDirectoryNode" />
+              <item name="jobcrawler" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="crawlers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JobCrawler" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JobCrawler" type="462c0819:PsiDirectoryNode" />
+              <item name="jobcrawler" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="scrapers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JobCrawler" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JobCrawler" type="462c0819:PsiDirectoryNode" />
+              <item name="jobcrawler" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JobCrawler" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JobCrawler" type="462c0819:PsiDirectoryNode" />
+              <item name="jobcrawler" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JobCrawler" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JobCrawler" type="462c0819:PsiDirectoryNode" />
+              <item name="jobcrawler" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="fixtures" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="Scope">
         <subPane subId="Scope 'Default Changelist'; set:Default Changelist; class com.intellij.packageDependencies.ChangeListScope">
           <expand>
@@ -225,63 +266,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="JobCrawler" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JobCrawler" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JobCrawler" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JobCrawler" type="462c0819:PsiDirectoryNode" />
-              <item name="jobcrawler" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JobCrawler" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JobCrawler" type="462c0819:PsiDirectoryNode" />
-              <item name="jobcrawler" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JobCrawler" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JobCrawler" type="462c0819:PsiDirectoryNode" />
-              <item name="jobcrawler" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="crawlers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JobCrawler" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JobCrawler" type="462c0819:PsiDirectoryNode" />
-              <item name="jobcrawler" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="scrapers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JobCrawler" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JobCrawler" type="462c0819:PsiDirectoryNode" />
-              <item name="jobcrawler" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JobCrawler" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JobCrawler" type="462c0819:PsiDirectoryNode" />
-              <item name="jobcrawler" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JobCrawler" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JobCrawler" type="462c0819:PsiDirectoryNode" />
-              <item name="jobcrawler" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-              <item name="fixtures" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -334,21 +318,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for test_airbus_crawler.test_get_job_details" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <module name="JobCrawler" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/jobcrawler/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_airbus_crawler.test_get_job_details&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
     <configuration name="pytest for test_airbus_crawler.test_get_jobs" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="JobCrawler" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -394,6 +363,21 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="pytest for test_mailer.test_send_mail" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="JobCrawler" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/jobcrawler/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_mailer.test_send_mail&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
     <configuration name="pytest in tests" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="JobCrawler" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -412,18 +396,18 @@
     <list>
       <item itemvalue="Python.Apply BLACK" />
       <item itemvalue="Python tests.pytest for test_airbus_crawler.test_get_jobs" />
-      <item itemvalue="Python tests.pytest for test_airbus_crawler.test_get_job_details" />
       <item itemvalue="Python tests.pytest for test_airbus_crawler.test_get_jobs_zero_results" />
       <item itemvalue="Python tests.pytest in tests" />
       <item itemvalue="Python tests.pytest for test_mailer.test_mailer" />
+      <item itemvalue="Python tests.pytest for test_mailer.test_send_mail" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python tests.pytest for test_mailer.test_mailer" />
+        <item itemvalue="Python tests.pytest for test_mailer.test_send_mail" />
         <item itemvalue="Python tests.pytest in tests" />
         <item itemvalue="Python tests.pytest for test_airbus_crawler.test_get_jobs_zero_results" />
         <item itemvalue="Python tests.pytest for test_airbus_crawler.test_get_jobs" />
-        <item itemvalue="Python tests.pytest for test_airbus_crawler.test_get_job_details" />
       </list>
     </recent_temporary>
   </component>
@@ -502,38 +486,45 @@
       <option name="project" value="LOCAL" />
       <updated>1558781071276</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="implementing email">
+      <created>1558872533111</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1558872533111</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="pytest_for_test_airbus_crawler_test_get_jobs - 2019.05.25 at 12h 33m 28s.xml">
-      <configuration name="pytest for test_airbus_crawler.test_get_jobs" configurationId="tests" />
+    <history-entry file="pytest_for_test_mailer_test_send_mail - 2019.05.28 at 11h 13m 21s.xml">
+      <configuration name="pytest for test_mailer.test_send_mail" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_for_test_airbus_crawler_test_get_jobs_zero_results - 2019.05.25 at 12h 33m 38s.xml">
-      <configuration name="pytest for test_airbus_crawler.test_get_jobs_zero_results" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_for_test_airbus_crawler_test_get_jobs_zero_results - 2019.05.26 at 11h 32m 52s.xml">
-      <configuration name="pytest for test_airbus_crawler.test_get_jobs_zero_results" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_in_tests - 2019.05.26 at 11h 33m 01s.xml">
-      <configuration name="pytest in tests" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_in_tests - 2019.05.26 at 11h 35m 22s.xml">
-      <configuration name="pytest in tests" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_in_tests - 2019.05.26 at 11h 35m 28s.xml">
-      <configuration name="pytest in tests" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_for_test_mailer_test_mailer - 2019.05.26 at 11h 36m 19s.xml">
+    <history-entry file="pytest_for_test_mailer_test_mailer - 2019.05.28 at 12h 12m 25s.xml">
       <configuration name="pytest for test_mailer.test_mailer" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_for_test_mailer_test_mailer - 2019.05.26 at 12h 27m 11s.xml">
+    <history-entry file="pytest_for_test_mailer_test_send_mail - 2019.05.28 at 12h 25m 11s.xml">
+      <configuration name="pytest for test_mailer.test_send_mail" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_for_test_mailer_test_send_mail - 2019.05.28 at 12h 26m 49s.xml">
+      <configuration name="pytest for test_mailer.test_send_mail" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_for_test_mailer_test_send_mail - 2019.05.28 at 12h 41m 08s.xml">
+      <configuration name="pytest for test_mailer.test_send_mail" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_for_test_mailer_test_mailer - 2019.05.28 at 12h 41m 11s.xml">
       <configuration name="pytest for test_mailer.test_mailer" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_for_test_mailer_test_mailer - 2019.05.26 at 12h 27m 33s.xml">
+    <history-entry file="pytest_for_test_mailer_test_mailer - 2019.05.28 at 13h 25m 41s.xml">
       <configuration name="pytest for test_mailer.test_mailer" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_for_test_mailer_test_mailer - 2019.05.26 at 12h 28m 27s.xml">
+    <history-entry file="pytest_for_test_mailer_test_mailer - 2019.05.28 at 13h 29m 02s.xml">
+      <configuration name="pytest for test_mailer.test_mailer" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_for_test_mailer_test_mailer - 2019.05.28 at 13h 30m 48s.xml">
+      <configuration name="pytest for test_mailer.test_mailer" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_for_test_mailer_test_mailer - 2019.05.28 at 13h 31m 47s.xml">
       <configuration name="pytest for test_mailer.test_mailer" configurationId="tests" />
     </history-entry>
   </component>
@@ -550,13 +541,13 @@
     <frame x="54" y="-8" width="1554" height="916" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49808428" weight="0.176781" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49808428" visible="true" weight="0.176781" />
       <window_info id="Structure" order="1" sideWeight="0.50285715" side_tool="true" weight="0.176781" />
       <window_info id="Favorites" order="2" sideWeight="0.5019157" side_tool="true" weight="0.176781" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32950193" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.36398467" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39974457" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.42528737" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.2247765" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32950193" />
@@ -598,7 +589,8 @@
     <MESSAGE value="finished airbus scraper" />
     <MESSAGE value="implemeting airbus crawler keywords map" />
     <MESSAGE value="finished airbus crawler listings and details calls;&#10;implemented airbus keyword map;" />
-    <option name="LAST_COMMIT_MESSAGE" value="finished airbus crawler listings and details calls;&#10;implemented airbus keyword map;" />
+    <MESSAGE value="implementing email" />
+    <option name="LAST_COMMIT_MESSAGE" value="implementing email" />
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
@@ -765,13 +757,6 @@
     <entry file="file://$PROJECT_DIR$/.pre-commit-config.yaml" />
     <entry file="file://$PROJECT_DIR$/tests/test_commit_hook.py" />
     <entry file="file://$PROJECT_DIR$/jobcrawler/jobposting/jobdescription.py" />
-    <entry file="file://$PROJECT_DIR$/setup.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="15" column="40" lean-forward="true" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/test_job_description.py" />
     <entry file="file://$PROJECT_DIR$/jobcrawler/core/scrapers/scraper.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -811,13 +796,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jobcrawler/jobposting/filtermaps.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/jobcrawler/jobposting/filtermaps.py" />
     <entry file="file://$PROJECT_DIR$/jobcrawler/tests/test_job_item.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -868,16 +847,6 @@
           <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
           <folding>
             <element signature="e#0#59#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jobcrawler/core/jobitem.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="19" column="2" selection-start-line="19" selection-start-column="2" selection-end-line="19" selection-end-column="2" />
-          <folding>
-            <element signature="e#0#34#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -936,26 +905,46 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/requirements_dev.txt">
+    <entry file="file://$PROJECT_DIR$/jobcrawler/core/jobitem.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="15" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
+        <state relative-caret-position="306">
+          <caret line="19" column="2" selection-start-line="19" selection-start-column="2" selection-end-line="19" selection-end-column="2" />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jobcrawler/core/mailer.py">
+    <entry file="file://$PROJECT_DIR$/requirements_dev.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+        <state relative-caret-position="170">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/setup.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="17" column="61" lean-forward="true" selection-start-line="17" selection-start-column="61" selection-end-line="17" selection-end-column="61" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/jobcrawler/tests/test_mailer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="18" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
+        <state relative-caret-position="85">
+          <caret line="17" column="7" lean-forward="true" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jobcrawler/core/mailer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="19" column="32" lean-forward="true" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
           </folding>
         </state>
       </provider>
