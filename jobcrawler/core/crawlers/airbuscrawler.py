@@ -2,9 +2,9 @@ import logging
 import requests
 import time
 from typing import Optional, List
-from jobcrawler.core.jobitem import JobItem, JobDetails
-from jobcrawler.core.crawlers.crawler import Crawler
-from jobcrawler.core.filter import SearchFilter
+from jobcrawler.core.search.item import JobItem, JobDetails
+from jobcrawler.core.crawlers.abstract import Crawler
+from jobcrawler.core.search.filter import SearchFilter
 from jobcrawler.core.scrapers.airbusscraper import AirbusScraper
 
 log = logging.getLogger('AirbusCrawler')

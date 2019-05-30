@@ -1,8 +1,6 @@
 import pytest
 from collections import namedtuple
-from jobcrawler.core.filter import SearchFilter
-from jobcrawler.core.mailer import Mailer
-from jobcrawler.core.crawlers.airbuscrawler import AirbusCrawler
+from jobcrawler.core.email.mailer import Mailer
 
 pytest_plugins = ['jobcrawler/tests/data/fixtures/job_items']
 
@@ -24,11 +22,15 @@ def get_mail_credentials():
     return credentails(email, password)
 
 
-# @pytest.mark.skip("Live email; must set email credentials, see get_mail_credentails()")
+def test_email_html():
+    pass
+
+
+@pytest.mark.skip("Live email; must set email credentials, see get_mail_credentails()")
 def test_mailer(fake_job_items):
     jobs = fake_job_items
     creds = get_mail_credentials()
 
-    mailer = Mailer(creds, [creds.email])
+    mailer = Mailer(creds, [str(creds.email)])
     mailer.send_jobs(jobs)
 

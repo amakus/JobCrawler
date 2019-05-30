@@ -1,8 +1,8 @@
 import pytest
 from jobcrawler.core.crawlers.airbuscrawler import AirbusCrawler
-from jobcrawler.core.crawlers.crawler import Crawler
-from jobcrawler.core.filter import SearchFilter
-from jobcrawler.core.jobitem import JobItem, JobDetails
+from jobcrawler.core.crawlers.abstract import Crawler
+from jobcrawler.core.search.filter import SearchFilter
+from jobcrawler.core.search.item import JobItem, JobDetails
 
 
 def test_instantiate():

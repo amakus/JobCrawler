@@ -1,6 +1,6 @@
 import pytest
 import requests
-from jobcrawler.core.jobitem import JobItem, JobDetails
+from jobcrawler.core.search.item import JobItem, JobDetails
 from jobcrawler.core.scrapers.airbusscraper import AirbusScraper
 
 pytest_plugins = ['jobcrawler/tests/data/fixtures/response']

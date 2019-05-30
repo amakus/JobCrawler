@@ -1,5 +1,5 @@
 import pytest
-from jobcrawler.core.jobitem import JobItem, JobDetails
+from jobcrawler.core.search.item import JobItem, JobDetails
 from jobcrawler.util.lorem_ipsum import bacon
 
 
@@ -7,6 +7,7 @@ from jobcrawler.util.lorem_ipsum import bacon
 def fake_job_items():
     return [
         JobItem(
+            company='Fake Inc.',
             title="Position at fake department doing fake work.",
             url="www.fakeurl.com",
             details=JobDetails(category='Cool job',
@@ -17,6 +18,7 @@ def fake_job_items():
                                location='Hamburg, Germany')
         ),
         JobItem(
+            company='Fake Doors Ltd.',
             title="Intern to make coffee and other things nobody likes to do",
             url="www.fake-doors.com",
             details=JobDetails(category='Fake doors',
@@ -27,6 +29,7 @@ def fake_job_items():
                                location='C137, Earth')
         ),
         JobItem(
+            company='Dream Factory Inc',
             title="Title description that says nothing",
             url="www.wow-our-jobs-are-so-cool-check-it-out.com",
             details=JobDetails(category='Dream Factory Inc',

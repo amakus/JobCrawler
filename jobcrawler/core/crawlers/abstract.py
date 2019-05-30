@@ -1,12 +1,5 @@
 from typing import Optional
-from jobcrawler.core.filter import SearchFilter
-
-
-class CrawlerFactory:
-
-    @classmethod
-    def get_crawler(cls, domain):
-        pass
+from jobcrawler.core.search.filter import SearchFilter
 
 
 class Crawler:

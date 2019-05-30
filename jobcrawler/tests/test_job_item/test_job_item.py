@@ -1,20 +1,22 @@
 import time
 from datetime import datetime
-from jobcrawler.core.jobitem import JobItem
-from jobcrawler.core.jobitem import JobDetails
+from jobcrawler.core.search.item import JobItem
+from jobcrawler.core.search.item import JobDetails
 
 
 def test_job_item_instantiation():
-    item = JobItem('title', 'url')
+    item = JobItem('company', 'title', 'url')
     assert isinstance(item, JobItem)
 
 
 def test_job_item_properties():
+    company = 'company'
     title = 'title'
     description = JobDetails()
     url = 'www.test.com'
-    item = JobItem(title, url, description)
+    item = JobItem(company, title, url, description)
 
+    assert item.company == company
     assert item.title == title
     assert item.url == url
     assert isinstance(item.details, JobDetails)
@@ -23,7 +25,7 @@ def test_job_item_properties():
 def test_job_date():
     before = datetime.now()
     time.sleep(1)
-    item = JobItem('job', 'url')
+    item = JobItem('company', 'job', 'url')
     time.sleep(1)
     after = datetime.now()
     assert before < item.date < after
@@ -49,9 +51,12 @@ def test_job_details_properties():
     assert descr.skills == skills
     assert descr.location == location
 
+
 def test_iter_job_details():
     details = JobDetails(category='cat', skills='skillz', location='loc')
     assert [d.value for d in details] == ['cat', '', '', '', 'skillz', 'loc']
+
+
 def test_job_details_has_entries():
     details = JobDetails()
     assert details.has_entries() is False
@@ -60,10 +65,11 @@ def test_job_details_has_entries():
 
 
 def test_to_html_non_verbose():
+    company = 'company'
     title = 'title'
     url = 'www.test.com'
     description = JobDetails('cat', '', '', '', '', 'loc')
-    item = JobItem(title, url, description)
+    item = JobItem(company, title, url, description)
 
     expected_verbose = ("<table frame='box'>"
                         "<tbody>"
@@ -82,7 +88,6 @@ def test_to_html_non_verbose():
 
     assert item.to_html(verbose=True) == expected_verbose
     assert item.to_html(verbose=False) == expected_non_verbose
-
 
 
 def test_job_hash():

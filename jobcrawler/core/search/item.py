@@ -4,8 +4,9 @@ from datetime import datetime
 
 class JobItem:
 
-    def __init__(self, title, url, details=None):
+    def __init__(self, company, title, url, details=None):
         self._date = datetime.now()
+        self.company = company
         self.title = title
         self.url = url
         self.details = details or JobDetails()

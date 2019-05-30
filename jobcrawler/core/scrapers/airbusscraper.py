@@ -1,6 +1,7 @@
 from bs4 import BeautifulSoup
-from jobcrawler.core.scrapers.scraper import Scraper
-from jobcrawler.core.jobitem import JobItem, JobDetails
+from jobcrawler.core.scrapers.abstract import Scraper
+from jobcrawler.core.search.item import JobItem, JobDetails
+from jobcrawler.core.search.domain import Domain
 
 
 class AirbusScraper(Scraper):
@@ -12,7 +13,9 @@ class AirbusScraper(Scraper):
         soup = BeautifulSoup(response.text, 'html.parser')
         for job_posting in cls._iter_job_postings(soup):
             title, url = job_posting.text, job_posting['href']
-            jobs.append(JobItem(title, url))
+            jobs.append(
+                JobItem(Domain.AIRBUS, title, url)
+            )
 
         return jobs
 
