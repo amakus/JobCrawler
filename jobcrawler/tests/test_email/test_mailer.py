@@ -22,15 +22,11 @@ def get_mail_credentials():
     return credentails(email, password)
 
 
-def test_email_html():
-    pass
-
-
 @pytest.mark.skip("Live email; must set email credentials, see get_mail_credentails()")
 def test_mailer(fake_job_items):
     jobs = fake_job_items
-    creds = get_mail_credentials()
 
+    creds = get_mail_credentials()
     mailer = Mailer(creds, [str(creds.email)])
-    mailer.send_jobs(jobs)
+    mailer.send_search_results(jobs)
 

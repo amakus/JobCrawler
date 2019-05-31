@@ -1,9 +1,12 @@
 import smtplib
+from typing import Tuple, List
 from contextlib import contextmanager
 from email.message import EmailMessage
-from typing import Tuple, List
 
 from jobcrawler.core.email.credentials import EmailCredentials
+from jobcrawler.core.email.content import HtmlContent
+from jobcrawler.core.search.results import SearchResults
+
 
 SMTP_HOSTS = {
         'gmail.com': ('smtp.gmail.com', 587),
@@ -34,24 +37,25 @@ class Mailer:
     def credentials(self, cred):
         self._credentials = EmailCredentials(*cred)
 
-    def send_jobs(self, job_items):
-        msg = self.create_message(job_items)
+    def send_search_results(self, search_results):
+        # type: (List[SearchResults]) -> None
+
+        msg = self.create_message(search_results)
         with email_server(self.credentials) as server:
             server.send_message(msg)
 
-    def create_message(self, job_items):
+    def create_message(self, search_results):
+        # type: (List[SearchResults]) -> EmailMessage
+
         msg = EmailMessage()
         msg['Subject'] = 'Jobs Update'
         msg['From'] = self._credentials.email
         msg['To'] = ', '.join([email for email in self.mail_to])
 
-        content = self._make_html_content(job_items)
+        content = HtmlContent(search_results)
         msg.set_content(content)
 
         return msg
-
-    def _make_html_content(self, job_items):
-        return ''
 
 
 @contextmanager

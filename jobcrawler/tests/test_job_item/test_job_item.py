@@ -86,8 +86,8 @@ def test_to_html_non_verbose():
                             "</tbody>"
                             "</table>")
 
-    assert item.to_html(verbose=True) == expected_verbose
-    assert item.to_html(verbose=False) == expected_non_verbose
+    assert item.to_html(details=True) == expected_verbose
+    assert item.to_html(details=False) == expected_non_verbose
 
 
 def test_job_hash():

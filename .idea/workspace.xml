@@ -2,16 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="58f40b6f-ef09-430a-a1e5-33900578d0cf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/jobcrawler/core/email/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jobcrawler/core/email/address.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jobcrawler/core/email/credentials.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jobcrawler/core/email/mailer.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jobcrawler/tests/test_crawler/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jobcrawler/tests/test_email/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jobcrawler/tests/test_job_item/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jobcrawler/tests/test_scraper/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jobcrawler/core/email/content.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jobcrawler/core/search/results.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jobcrawler/tests/test_email/test_content.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jobcrawler/core/mailer.py" beforeDir="false" afterPath="$PROJECT_DIR$/jobcrawler/core/mailer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jobcrawler/core/email/mailer.py" beforeDir="false" afterPath="$PROJECT_DIR$/jobcrawler/core/email/mailer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jobcrawler/core/search/item.py" beforeDir="false" afterPath="$PROJECT_DIR$/jobcrawler/core/search/item.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jobcrawler/tests/test_email/test_mailer.py" beforeDir="false" afterPath="$PROJECT_DIR$/jobcrawler/tests/test_email/test_mailer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jobcrawler/tests/test_job_item/test_job_item.py" beforeDir="false" afterPath="$PROJECT_DIR$/jobcrawler/tests/test_job_item/test_job_item.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,10 +23,34 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jobcrawler/core/email/mailer.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="157">
+              <caret line="56" selection-start-line="56" selection-end-line="56" />
+              <folding>
+                <element signature="e#0#14#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/jobcrawler/core/email/content.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="164">
+              <caret line="67" column="62" lean-forward="true" selection-start-line="67" selection-start-column="62" selection-end-line="67" selection-end-column="62" />
+              <folding>
+                <element signature="e#0#23#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jobcrawler/core/search/item.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
+            <state relative-caret-position="119">
+              <caret line="11" column="46" lean-forward="true" selection-start-line="11" selection-start-column="46" selection-end-line="11" selection-end-column="46" />
               <folding>
                 <element signature="e#0#34#0" expanded="true" />
               </folding>
@@ -37,48 +59,24 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jobcrawler/tests/data/fixtures/job_items.py">
+        <entry file="file://$PROJECT_DIR$/jobcrawler/tests/test_email/test_content.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
+            <state relative-caret-position="119">
               <caret line="7" selection-start-line="7" selection-end-line="7" />
               <folding>
-                <element signature="e#0#13#0" expanded="true" />
+                <element signature="e#0#54#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jobcrawler/core/crawlers/factory.py">
+        <entry file="file://$PROJECT_DIR$/jobcrawler/core/search/results.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" selection-start-line="6" selection-end-line="6" />
+            <state relative-caret-position="289">
+              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
               <folding>
-                <element signature="e#0#64#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jobcrawler/tests/test_scraper/test_airbus_scraper.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-              <folding>
-                <element signature="e#0#13#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jobcrawler/core/scrapers/airbusscraper.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret lean-forward="true" />
-              <folding>
-                <element signature="e#0#29#0" expanded="true" />
+                <element signature="e#0#33#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -87,22 +85,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jobcrawler/core/search/filter.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
+            <state relative-caret-position="85">
+              <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
               <folding>
                 <element signature="e#0#40#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/jobcrawler/core/email/mailer.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-              <folding>
-                <element signature="e#0#14#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -111,10 +97,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jobcrawler/tests/test_email/test_mailer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="181">
-              <caret line="29" column="19" lean-forward="true" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="19" />
+            <state relative-caret-position="85">
+              <caret line="5" selection-start-line="5" selection-end-line="5" />
               <folding>
-                <element signature="e#0#6#0" expanded="true" />
+                <element signature="e#0#13#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -141,10 +127,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/tests/test_commit_hook.py" />
-        <option value="$PROJECT_DIR$/jobcrawler/crawler.py" />
-        <option value="$PROJECT_DIR$/jobcrawler/crawlers/basecrawler.py" />
-        <option value="$PROJECT_DIR$/tests/test_base_crawler.py" />
         <option value="$PROJECT_DIR$/jobcrawler/jobposting.py" />
         <option value="$PROJECT_DIR$/jobcrawler/jobposting/jobdescription.py" />
         <option value="$PROJECT_DIR$/tests/test_crawler_factory.py" />
@@ -181,8 +163,6 @@
         <option value="$PROJECT_DIR$/jobcrawler/core/email/address.py" />
         <option value="$PROJECT_DIR$/jobcrawler/core/email/credentials.py" />
         <option value="$PROJECT_DIR$/jobcrawler/tests/test_email/test_credentials.py" />
-        <option value="$PROJECT_DIR$/jobcrawler/tests/test_email/test_mailer.py" />
-        <option value="$PROJECT_DIR$/jobcrawler/core/email/mailer.py" />
         <option value="$PROJECT_DIR$/jobcrawler/core/jobitem.py" />
         <option value="$PROJECT_DIR$/jobcrawler/tests/test_job_item/test_job_item.py" />
         <option value="$PROJECT_DIR$/jobcrawler/core/search/domain.py" />
@@ -192,6 +172,12 @@
         <option value="$PROJECT_DIR$/jobcrawler/core/crawlers/abstract.py" />
         <option value="$PROJECT_DIR$/jobcrawler/tests/test_crawler/test_crawler_factory.py" />
         <option value="$PROJECT_DIR$/jobcrawler/tests/data/fixtures/job_items.py" />
+        <option value="$PROJECT_DIR$/jobcrawler/core/email/mailer.py" />
+        <option value="$PROJECT_DIR$/jobcrawler/core/search/results.py" />
+        <option value="$PROJECT_DIR$/jobcrawler/tests/test_email/test_mailer.py" />
+        <option value="$PROJECT_DIR$/jobcrawler/tests/test_email/test_content.py" />
+        <option value="$PROJECT_DIR$/jobcrawler/core/search/item.py" />
+        <option value="$PROJECT_DIR$/jobcrawler/core/email/content.py" />
       </list>
     </option>
   </component>
@@ -204,7 +190,7 @@
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="Scope" currentSubView="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope" proportions="" version="1">
+    <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
@@ -325,7 +311,27 @@
               <item name="C:\Users\Andreas\PycharmProjects\JobCrawler" type="442cc68d:ScopeViewTreeModel$RootNode" />
               <item name="jobcrawler" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="core" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="email" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="search" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="JobCrawler" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="C:\Users\Andreas\PycharmProjects\JobCrawler" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="jobcrawler" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="tests" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="JobCrawler" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="C:\Users\Andreas\PycharmProjects\JobCrawler" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="jobcrawler" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="tests" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="test_crawler" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="JobCrawler" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="C:\Users\Andreas\PycharmProjects\JobCrawler" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="jobcrawler" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="tests" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="test_email" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
           </expand>
           <select />
@@ -354,6 +360,13 @@
               <item name="JobCrawler" type="462c0819:PsiDirectoryNode" />
               <item name="jobcrawler" type="462c0819:PsiDirectoryNode" />
               <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="email" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JobCrawler" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JobCrawler" type="462c0819:PsiDirectoryNode" />
+              <item name="jobcrawler" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
               <item name="search" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -367,15 +380,7 @@
               <item name="JobCrawler" type="462c0819:PsiDirectoryNode" />
               <item name="jobcrawler" type="462c0819:PsiDirectoryNode" />
               <item name="tests" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JobCrawler" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JobCrawler" type="462c0819:PsiDirectoryNode" />
-              <item name="jobcrawler" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-              <item name="fixtures" type="462c0819:PsiDirectoryNode" />
+              <item name="test_email" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -411,7 +416,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.pytest in tests">
+  <component name="RunManager" selected="Python tests.pytest for test_content.test_email_html">
     <configuration name="Apply BLACK" type="PythonConfigurationType" factoryName="Python">
       <module name="JobCrawler" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -433,6 +438,21 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="pytest for test_content.test_email_html" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="JobCrawler" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/jobcrawler/tests/test_email" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_content.test_email_html&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
     <configuration name="pytest for test_crawler_factory.test_crawler_factory_airbus" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="JobCrawler" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -448,22 +468,7 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for test_job_item.test_to_html_non_verbose" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <module name="JobCrawler" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/jobcrawler/tests/test_job_item" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_job_item.test_to_html_non_verbose&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="pytest for test_mailer.test_mailer" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for test_mailer.test_email_html" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="JobCrawler" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -474,7 +479,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_mailer.test_mailer&quot;" />
+      <option name="_new_target" value="&quot;test_mailer.test_email_html&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -510,19 +515,19 @@
     </configuration>
     <list>
       <item itemvalue="Python.Apply BLACK" />
-      <item itemvalue="Python tests.pytest for test_crawler_factory.test_crawler_factory_airbus" />
-      <item itemvalue="Python tests.pytest for test_job_item.test_to_html_non_verbose" />
-      <item itemvalue="Python tests.pytest for test_mailer.test_mailer" />
       <item itemvalue="Python tests.pytest in test_job_item.py" />
       <item itemvalue="Python tests.pytest in tests" />
+      <item itemvalue="Python tests.pytest for test_crawler_factory.test_crawler_factory_airbus" />
+      <item itemvalue="Python tests.pytest for test_mailer.test_email_html" />
+      <item itemvalue="Python tests.pytest for test_content.test_email_html" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.pytest for test_content.test_email_html" />
+        <item itemvalue="Python tests.pytest for test_mailer.test_email_html" />
         <item itemvalue="Python tests.pytest in tests" />
         <item itemvalue="Python tests.pytest for test_crawler_factory.test_crawler_factory_airbus" />
         <item itemvalue="Python tests.pytest in test_job_item.py" />
-        <item itemvalue="Python tests.pytest for test_job_item.test_to_html_non_verbose" />
-        <item itemvalue="Python tests.pytest for test_mailer.test_mailer" />
       </list>
     </recent_temporary>
   </component>
@@ -622,31 +627,17 @@
       <option name="project" value="LOCAL" />
       <updated>1559046533223</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="restructured core;&#10;implemented email sending;">
+      <created>1559223186409</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1559223186409</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="pytest_in_test_job_item_py - 2019.05.30 at 15h 07m 09s.xml">
-      <configuration name="pytest in test_job_item.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_for_test_job_item_test_to_html_non_verbose - 2019.05.30 at 15h 08m 18s.xml">
-      <configuration name="pytest for test_job_item.test_to_html_non_verbose" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_in_test_job_item_py - 2019.05.30 at 15h 08m 25s.xml">
-      <configuration name="pytest in test_job_item.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_in_tests - 2019.05.30 at 15h 08m 39s.xml">
-      <configuration name="pytest in tests" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_for_test_crawler_factory_test_crawler_factory_airbus - 2019.05.30 at 15h 21m 46s.xml">
-      <configuration name="pytest for test_crawler_factory.test_crawler_factory_airbus" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_for_test_crawler_factory_test_crawler_factory_airbus - 2019.05.30 at 15h 22m 20s.xml">
-      <configuration name="pytest for test_crawler_factory.test_crawler_factory_airbus" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_for_test_crawler_factory_test_crawler_factory_airbus - 2019.05.30 at 15h 22m 39s.xml">
-      <configuration name="pytest for test_crawler_factory.test_crawler_factory_airbus" configurationId="tests" />
-    </history-entry>
     <history-entry file="pytest_for_test_crawler_factory_test_crawler_factory_airbus - 2019.05.30 at 15h 25m 46s.xml">
       <configuration name="pytest for test_crawler_factory.test_crawler_factory_airbus" configurationId="tests" />
     </history-entry>
@@ -655,6 +646,27 @@
     </history-entry>
     <history-entry file="pytest_in_tests - 2019.05.30 at 15h 29m 08s.xml">
       <configuration name="pytest in tests" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_for_test_mailer_test_email_html - 2019.05.30 at 15h 53m 27s.xml">
+      <configuration name="pytest for test_mailer.test_email_html" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_for_test_mailer_test_email_html - 2019.05.30 at 15h 54m 33s.xml">
+      <configuration name="pytest for test_mailer.test_email_html" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_for_test_mailer_test_email_html - 2019.05.30 at 15h 56m 13s.xml">
+      <configuration name="pytest for test_mailer.test_email_html" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_for_test_content_test_email_html - 2019.05.31 at 11h 21m 30s.xml">
+      <configuration name="pytest for test_content.test_email_html" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_for_test_content_test_email_html - 2019.05.31 at 11h 22m 14s.xml">
+      <configuration name="pytest for test_content.test_email_html" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_for_test_content_test_email_html - 2019.05.31 at 11h 30m 00s.xml">
+      <configuration name="pytest for test_content.test_email_html" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_for_test_content_test_email_html - 2019.05.31 at 11h 30m 02s.xml">
+      <configuration name="pytest for test_content.test_email_html" configurationId="tests" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -668,21 +680,22 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="54" y="-8" width="1554" height="916" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49808428" visible="true" weight="0.176781" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49808428" weight="0.176781" />
       <window_info id="Structure" order="1" sideWeight="0.50285715" side_tool="true" weight="0.176781" />
       <window_info id="Favorites" order="2" sideWeight="0.5019157" side_tool="true" weight="0.176781" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32950193" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.42528737" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.2247765" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.42528737" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.27458492" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32950193" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32950193" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32950193" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Python Console" order="10" weight="0.13793103" />
+      <window_info anchor="bottom" id="Python Console" order="10" weight="0.46104726" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -721,6 +734,17 @@
     <MESSAGE value="implementing email" />
     <MESSAGE value="restructured core;&#10;implemented email sending;" />
     <option name="LAST_COMMIT_MESSAGE" value="restructured core;&#10;implemented email sending;" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/jobcrawler/core/email/content.py</url>
+          <line>59</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
@@ -772,19 +796,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/HISTORY.rst">
-      <provider selected="true" editor-type-id="restructured-text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MANIFEST.in">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docs/readme.rst">
-      <provider selected="true" editor-type-id="restructured-text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/docs/conf.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -901,13 +912,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jobcrawler/tests/test_crawler/test_airbus_crawler.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/jobcrawler/tests/data/fixtures/response.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -931,9 +935,6 @@
           <caret line="17" column="61" lean-forward="true" selection-start-line="17" selection-start-column="61" selection-end-line="17" selection-end-column="61" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jobcrawler/core/email/mailer.py">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/jobcrawler/tests/test_email/test_address.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -966,16 +967,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="19" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jobcrawler/tests/test_email/test_mailer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="29" column="19" lean-forward="true" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#6#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1033,12 +1024,84 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jobcrawler/core/search/item.py">
+    <entry file="file://$PROJECT_DIR$/jobcrawler/tests/test_scraper/test_airbus_scraper.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        <state relative-caret-position="272">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
           <folding>
-            <element signature="e#0#34#0" expanded="true" />
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jobcrawler/core/scrapers/airbusscraper.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jobcrawler/core/crawlers/factory.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#64#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jobcrawler/tests/test_email/test_file.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jobcrawler/core/email/mailer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="56" selection-start-line="56" selection-end-line="56" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jobcrawler/tests/test_email/test_mailer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jobcrawler/tests/test_crawler/test_airbus_crawler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jobcrawler/core/search/filter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jobcrawler/core/search/results.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="e#0#33#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1053,52 +1116,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jobcrawler/core/search/filter.py">
+    <entry file="file://$PROJECT_DIR$/jobcrawler/tests/test_email/test_content.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
+        <state relative-caret-position="119">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
           <folding>
-            <element signature="e#0#40#0" expanded="true" />
+            <element signature="e#0#54#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jobcrawler/core/scrapers/airbusscraper.py">
+    <entry file="file://$PROJECT_DIR$/jobcrawler/core/search/item.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
+        <state relative-caret-position="119">
+          <caret line="11" column="46" lean-forward="true" selection-start-line="11" selection-start-column="46" selection-end-line="11" selection-end-column="46" />
           <folding>
-            <element signature="e#0#29#0" expanded="true" />
+            <element signature="e#0#34#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jobcrawler/tests/test_scraper/test_airbus_scraper.py">
+    <entry file="file://$PROJECT_DIR$/jobcrawler/core/email/content.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        <state relative-caret-position="164">
+          <caret line="67" column="62" lean-forward="true" selection-start-line="67" selection-start-column="62" selection-end-line="67" selection-end-column="62" />
           <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jobcrawler/core/crawlers/factory.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-          <folding>
-            <element signature="e#0#64#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jobcrawler/core/email/mailer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
+            <element signature="e#0#23#0" expanded="true" />
           </folding>
         </state>
       </provider>

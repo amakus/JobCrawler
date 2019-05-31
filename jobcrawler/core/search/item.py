@@ -11,15 +11,18 @@ class JobItem:
         self.url = url
         self.details = details or JobDetails()
 
+    def __str__(self):
+        return self.to_html(details=True)
+
     @property
     def date(self):
         return self._date
 
-    def to_html(self, verbose=True):
-        """Returns html table with job listing information. If verbose, full job description is included."""
+    def to_html(self, details=True):
+        """Returns html table with job listing information. If 'details' is True, full job description is included."""
 
         table_rows = self._html_table_row('title', self.title)
-        for item in iter(self.details) if verbose else iter([]):
+        for item in iter(self.details) if details else iter([]):
             if item.value:
                 table_rows += self._html_table_row(*item)
         else:
